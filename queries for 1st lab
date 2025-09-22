@@ -1,0 +1,26 @@
+// dbms 1st lab queires 
+create database piiaarke;
+show databases ;
+use piiaarke;
+show tables;
+
+create table STUDENT1(
+ stdid int(5), stdname varchar(20), dob date, doj date, fee int(5), gender char );
+ 
+ desc STUDENT;
+ 
+ insert into STUDENT1( stdid, stdname, dob, doj, fee, gender)
+ values(1, 'pruthvi', '2005-03-19', '2025-08-10', 50000, 'M');
+ 
+  insert into STUDENT1( stdid, stdname, dob, doj, fee, gender)
+ values(1, 'puneeet', '2004-08-29', '2025-08-10', 50000, 'M');
+ 
+ select*from STUDENT_INFO;
+ 
+ alter TABLE STUDENT1 add phone_no int(10);
+ 
+ ALTER TABLE STUDENT1 
+ RENAME COLUMN phone_no to student_no;
+ 
+ alter table STUDENT1 RENAME TO STUDENT_INFO;
+ ALTER TABLE STUDENT_info DROP COLUMN gender 
